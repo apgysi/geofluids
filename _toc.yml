@@ -6,6 +6,8 @@ root: intro
 chapters:
 - file: 1-geochemical-modeling
 - file: 2-thermo-crash-course
+- file: 3-aqueous-speciation
+- file: 4-mineral-solubility
 - file: markdown
 - file: notebooks
 - file: markdown-notebooks
