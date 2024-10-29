@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Notebooks with MyST Markdown &#8212; Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling</title>
+    <title>2- Reaction Path Modeling &#8212; Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling</title>
   
   
   
@@ -57,9 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2-reaction-path';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="1-Introduction to Geochemical Modeling" href="1-intro-geochem-modeling.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +123,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,9 +178,9 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1-intro-geochem-modeling.html">1-Introduction to Geochemical Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2-reaction-path.html">2- Reaction Path Modeling</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2- Reaction Path Modeling</a></li>
 </ul>
 
     </div>
@@ -253,7 +252,7 @@
       
       
       
-      <li><a href="https://apgysi.github.io/geofluids/intro.html/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://apgysi.github.io/geofluids/intro.html/issues/new?title=Issue%20on%20page%20%2F2-reaction-path.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -283,7 +282,7 @@
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/2-reaction-path.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -367,7 +366,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Notebooks with MyST Markdown</h1>
+    <h1>2- Reaction Path Modeling</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,9 +376,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-reaction-path-modeling">Introduction to reaction path modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-rock-interaction-as-an-acid-base-titration-problem">Fluid-rock interaction as an acid-base titration problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feldspar-hydrolysis-model">Feldspar hydrolysis model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
 </ul>
             </nav>
         </div>
@@ -391,49 +391,73 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Link to this heading">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Link to this heading">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
+  <section class="tex2jax_ignore mathjax_ignore" id="reaction-path-modeling">
+<h1>2- Reaction Path Modeling<a class="headerlink" href="#reaction-path-modeling" title="Link to this heading">#</a></h1>
+<section id="introduction-to-reaction-path-modeling">
+<h2>Introduction to reaction path modeling<a class="headerlink" href="#introduction-to-reaction-path-modeling" title="Link to this heading">#</a></h2>
+<p>The concept of reaction path modeling in fluid-rock interactions can be traced back to the seminal work of Helgeson and his co-workers in the late 1960s.</p>
+<ul class="simple">
+<li><p>Helgeson, H. C. (1968). Evaluation of irreversible reactions in geochemical processes involving minerals and aqueous solutions-I. Thermodynamic relations. Geochimica et Cosmochimica Acta 32, 853-877. <span id="id1">[<a class="reference internal" href="#id9" title="Harold C. Helgeson. Evaluation of irreversible reactions in geochemical processes involving minerals and aqueous solutions—i. thermodynamic relations. Geochimica et Cosmochimica Acta, 32:853–877, 1968. doi:https://doi.org/10.1016/0016-7037(68)90100-2.">Hel68</a>]</span></p></li>
+<li><p>Helgeson, H. C., Garrels, R. M., &amp; Mackenzie, F. T. (1969). Evaluation of irreversible reactions in geochemical processes involving minerals and aqueous solutions-II. Applications. Geochimica et Cosmochimica Acta 33, 455-481.  <span id="id2">[<a class="reference internal" href="#id10" title="Harold C. Helgeson, Robert M. Garrels, and Fred T. MacKenzie. Evaluation of irreversible reactions in geochemical processes involving minerals and aqueous solutions—ii. applications. Geochimica et Cosmochimica Acta, 33:455–481, 1969. doi:https://doi.org/10.1016/0016-7037(69)90127-6.">HGM69</a>]</span></p></li>
+</ul>
+<p>Reaction path modeling aims to predict how the compositions of both rocks and fluids change as they interact over time. It’s like a step-by-step simulation of the chemical reactions occurring as water flows through rocks and minerals.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Reaction path modeling is a dynamic view of fluid-rock interaction – how system changes as a function of reaction progress (time or amount of reacted rock)</p>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
-</div>
+<p>Applications of reaction path modeling are numerous and include:</p>
+<ul class="simple">
+<li><p>Geothermal systems: Understanding the evolution of hot springs and geothermal reservoirs.</p></li>
+<li><p>Ore deposit formation: Simulating the transport and precipitation of metals to form ore deposits.</p></li>
+<li><p>Contaminant transport: Predicting the fate of pollutants in groundwater systems.</p></li>
+<li><p>CO2 sequestration: Evaluating the potential for storing carbon dioxide in geological formations.</p></li>
+<li><p>Weathering and diagenesis: Modeling the alteration of rocks at the Earth’s surface and in sedimentary basins.</p></li>
+</ul>
 </section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
-<ol class="arabic simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
-</ol>
-<p>That’s all that is needed to get started!</p>
+<section id="fluid-rock-interaction-as-an-acid-base-titration-problem">
+<h2>Fluid-rock interaction as an acid-base titration problem<a class="headerlink" href="#fluid-rock-interaction-as-an-acid-base-titration-problem" title="Link to this heading">#</a></h2>
+<p>We can make an analogy between fluid-rock interaction and an acid-base titration for understanding reaction path modeling. In a typical geothermal system, as shown in the image below from Iceland, interaction of geothermal fluids with basalts leads to the formation of various alteration zones depending on the amount of reaction progress (i.e., basalt reacted with the fluid). For simplification we will talk about “fluid-buffered” and “rock-buffered”, the latter indicating that more rock has reacted with the fluid.</p>
+<p><img alt="cover" src="_images/alteration-Iceland.png" /></p>
+<p>The pH of these geothermal waters strongly depends on the degree of fluid-rock interaction or rock-buffering. This is true for other systems, including ore-forming processes at depth closer to a magma chamber, or surface processes such as rock weathering and interaction with rainwater containing carbonic acid. If we simplify this further, the following holds true for most fluid-rock interaction processes:</p>
+<ul class="simple">
+<li><p>The fluid acts as the acid (HCl, H<sub>2</sub>SO<sub>4</sub>, H<sub>2</sub>S, CO<sub>2</sub>) that releases protons (H<sup>+</sup>)</p></li>
+</ul>
+<p><strong>acid dissociation reactions</strong></p>
+<p>HCl(aq) = H<sup>+</sup> + Cl<sup>-</sup></p>
+<p>H<sub>2</sub>CO<sub>3</sub>(aq) = H<sup>+</sup> + HCO<sub>3</sub><sup>-</sup></p>
+<ul class="simple">
+<li><p>The rock acts as the base and consumes or neutralizes protons (H+) during rock alteration.</p></li>
+</ul>
+<p><strong>mineral solubility reactions</strong></p>
+<p>3KAlSi<sub>3</sub>O<sub>8</sub> (K-feldspar)+2H<sup>+</sup> = KAl<sub>3</sub>Si<sub>3</sub>O<sub>10</sub>(OH)<sub>2</sub>(muscovite)+6SiO<sub>2</sub>(quartz)+2K<sup>+</sup></p>
+<p>Hence one can see that reaction of the rock with a fluid that contains the acids progressively shifts the pH to higher values by neutralization of these protons. This is also commonly expressed by the cation to proton activity ratios (e.g. log aK<sup>+</sup>/aH<sup>+</sup>). We will come back to the concept of activity in the next chapter and briefly introduce this below for the hydrolysis of feldspar.</p>
 </section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Link to this heading">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
+<section id="feldspar-hydrolysis-model">
+<h2>Feldspar hydrolysis model<a class="headerlink" href="#feldspar-hydrolysis-model" title="Link to this heading">#</a></h2>
+<p>A typical modeling example can be used to illustrate the concept of reaction path modeling and the link to acid-base titration. The feldspar hydrolysis model considers the alteration of feldspar reacting with water. Titration of K-feldspar into water results in a sequence of equilibrium alteration minerals including Gibbsite, Kaolinite, and Muscovite. At each step of the titration a small amount of K-feldspar is added to water, which increased the overall reaction progress of the fluid-rock system. Here are the expected steps:</p>
+<ul class="simple">
+<li><p>Initially K-feldspar (Kfs) added to water dissolves congruently (in stoichiometric proportion) to release Al to the water until Gibbsite (Al hydroxide) becomes saturated and precipitates</p></li>
+<li><p>Further addition of Kfs results in the saturation  and precipitation of Kaolinite (Al-Si mineral) and dissolution of Gibbsite</p></li>
+<li><p>Further addition of Kfs results in the saturation and precipitation of Muscovite (K-Al-Si mineral) and dissolution of Kaolinite</p></li>
+<li><p>Finally, when the system pH is increased enough, equilibrium with Kfs is reached. At this step the system is pH is buffered by equilibrium with feldspar.</p></li>
+</ul>
+<p>Below is an example titration model using the GEMS code package and the MINES thermodynamic database taken from  Module 2 in our <a class="reference external" href="https://apgysi.github.io/gems-mines-tutorial/">gitbook GEMS modeling tutorial</a>.</p>
+<p><img alt="cover" src="_images/fsp-titration-model.png" /></p>
+<p>The overall reaction sequence above results in the “pH steps” observed in a pH vs. moles or g feldspar added diagram. These indicate a buffering of pH by different mineral assemblages, which is also a convenient way to understand more complex fluid-rock systems. We will come back to this later, once Steps 1-3 have been presented, and the time comes to construct a complex model (Step 4).</p>
+</section>
+<section id="citations">
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id3">
+<div role="list" class="citation-list">
+<div class="citation" id="id9" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Hel68</a><span class="fn-bracket">]</span></span>
+<p>Harold C. Helgeson. Evaluation of irreversible reactions in geochemical processes involving minerals and aqueous solutions—i. thermodynamic relations. <em>Geochimica et Cosmochimica Acta</em>, 32:853–877, 1968. <a class="reference external" href="https://doi.org/https://doi.org/10.1016/0016-7037(68)90100-2">doi:https://doi.org/10.1016/0016-7037(68)90100-2</a>.</p>
+</div>
+<div class="citation" id="id10" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">HGM69</a><span class="fn-bracket">]</span></span>
+<p>Harold C. Helgeson, Robert M. Garrels, and Fred T. MacKenzie. Evaluation of irreversible reactions in geochemical processes involving minerals and aqueous solutions—ii. applications. <em>Geochimica et Cosmochimica Acta</em>, 33:455–481, 1969. <a class="reference external" href="https://doi.org/https://doi.org/10.1016/0016-7037(69)90127-6">doi:https://doi.org/10.1016/0016-7037(69)90127-6</a>.</p>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -468,6 +492,15 @@ See the YAML at the top of this page for example.</p></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="1-intro-geochem-modeling.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">1-Introduction to Geochemical Modeling</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
@@ -484,9 +517,10 @@ See the YAML at the top of this page for example.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-reaction-path-modeling">Introduction to reaction path modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-rock-interaction-as-an-acid-base-titration-problem">Fluid-rock interaction as an acid-base titration problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feldspar-hydrolysis-model">Feldspar hydrolysis model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
 </ul>
   </nav></div>
 

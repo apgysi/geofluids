@@ -5,4 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: 1-intro-geochem-modeling
+- file: 2-reaction-path
 

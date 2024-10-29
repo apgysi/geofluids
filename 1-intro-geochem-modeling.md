@@ -17,6 +17,7 @@ Several examples will be used to apply what you learn to real-world problems. To
 ## 5 Steps to Geochemical Modeling Mastery
 
 To guide you on your geochemical modeling journey, I will give provide you with a systematic and motivating method. **The 5-step approach includes: Define, Equip, Understand, Construct, and Predict.**
+![cover](./images/5steps.drawio.png)
 
 - **(Step 1) Define: Conceptualization & Problem Definition**
 	- **What's the problem?** Clearly state your research question or the issue you want to address.
@@ -78,6 +79,7 @@ Here are a couple of references for the topics/examples covered in Lecture 1:
 
 
 ```{bibliography}
+:filter: docname in docnames
 ```
 
 
