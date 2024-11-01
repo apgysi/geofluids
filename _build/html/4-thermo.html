@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling &#8212; Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling</title>
+    <title>4- Learn: Thermodynamics crash course &#8212; Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling</title>
   
   
   
@@ -57,10 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '4-thermo';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1-Introduction to Geochemical Modeling" href="1-intro-geochem-modeling.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -143,7 +142,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -174,8 +173,8 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling
                 </a>
             </li>
@@ -255,7 +254,7 @@
       
       
       
-      <li><a href="https://apgysi.github.io/geofluids/intro.html/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://apgysi.github.io/geofluids/intro.html/issues/new?title=Issue%20on%20page%20%2F4-thermo.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -285,7 +284,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/4-thermo.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -356,7 +355,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -367,11 +368,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling</h1>
+    <h1>4- Learn: Thermodynamics crash course</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gibbs-energy-enthalpy-entropy-volume">Gibbs energy, enthalpy, entropy, volume</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrium-constants-relation-between-mineral-solubilities-and-aqueous-speciation">Equilibrium constants - relation between mineral solubilities and aqueous speciation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aqueous-speciation">Aqueous speciation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#redox-reaction">Redox Reaction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-kinetics">Reaction kinetics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -381,26 +395,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="geofluids-your-5-step-guide-to-mastering-geochemical-reaction-path-modeling">
-<h1>Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling<a class="headerlink" href="#geofluids-your-5-step-guide-to-mastering-geochemical-reaction-path-modeling" title="Link to this heading">#</a></h1>
-<p><img alt="cover" src="_images/Krisuvik-Iceland.jpg" /></p>
-<p>The overall objectives of these accompanying Geofluids course notes are to:</p>
-<ul class="simple">
-<li><p>give you a systematic step wise approach to problem solving using geochemical modeling</p></li>
-<li><p>use real-world case studies to gain an understanding of key processes controlling fluid-rock interaction</p></li>
-<li><p>refresh fundamental thermodynamic and kinetic concepts and give you a solid understanding of their importance for modeling</p></li>
-<li><p>guide you in designing, calculating, and plotting fluid-rock equilibrium and kinetic models</p></li>
-<li><p>get you started on your own modeling projects!</p></li>
-</ul>
-<p>Useful materials for the exercises includes the <a class="reference external" href="https://apgysi.github.io/gems-mines-tutorial/">GEMS Tutorial gitbook</a> and the <a class="reference external" href="https://geoinfo.nmt.edu/mines-tdb">MINES thermodynamic database</a> .</p>
-<p>This book is split up into several chapters that will be added and improved step by step.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="1-intro-geochem-modeling.html">1-Introduction to Geochemical Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2-reaction-path.html">2- Reaction Path Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-equip-tools-databases.html">3- Equip: Modeling Tools &amp; Databases</a></li>
-</ul>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="learn-thermodynamics-crash-course">
+<h1>4- Learn: Thermodynamics crash course<a class="headerlink" href="#learn-thermodynamics-crash-course" title="Link to this heading">#</a></h1>
+<p>[[3-aqueous-speciation]][[4-mineral-solubility]][[5-reaction-kinetics]]</p>
+<section id="gibbs-energy-enthalpy-entropy-volume">
+<h2>Gibbs energy, enthalpy, entropy, volume<a class="headerlink" href="#gibbs-energy-enthalpy-entropy-volume" title="Link to this heading">#</a></h2>
+</section>
+<section id="equilibrium-constants-relation-between-mineral-solubilities-and-aqueous-speciation">
+<h2>Equilibrium constants - relation between mineral solubilities and aqueous speciation<a class="headerlink" href="#equilibrium-constants-relation-between-mineral-solubilities-and-aqueous-speciation" title="Link to this heading">#</a></h2>
+</section>
+<section id="aqueous-speciation">
+<h2>Aqueous speciation<a class="headerlink" href="#aqueous-speciation" title="Link to this heading">#</a></h2>
+</section>
+<section id="redox-reaction">
+<h2>Redox Reaction<a class="headerlink" href="#redox-reaction" title="Link to this heading">#</a></h2>
+</section>
+<section id="reaction-kinetics">
+<h2>Reaction kinetics<a class="headerlink" href="#reaction-kinetics" title="Link to this heading">#</a></h2>
+</section>
+<section id="citations">
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
+<span class="target" id="id1"></span></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -433,21 +448,32 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="1-intro-geochem-modeling.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">1-Introduction to Geochemical Modeling</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gibbs-energy-enthalpy-entropy-volume">Gibbs energy, enthalpy, entropy, volume</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrium-constants-relation-between-mineral-solubilities-and-aqueous-speciation">Equilibrium constants - relation between mineral solubilities and aqueous speciation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aqueous-speciation">Aqueous speciation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#redox-reaction">Redox Reaction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-kinetics">Reaction kinetics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
