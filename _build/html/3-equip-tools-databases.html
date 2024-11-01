@@ -484,11 +484,11 @@ document.write(`
 </tbody>
 </table>
 </div>
-<p>A summary of chemical solvers numerical methods and comparison between LMA, GEM and newer approach such as extended LMA (xLMA) are summarized nicely by Leal et al.<span id="id1">[<a class="reference internal" href="#id23" title="Allan MM Leal, Dmitrii A Kulik, William R Smith, and Martin O Saar. An overview of computational methods for chemical equilibrium and kinetic calculations for geochemical and reactive transport modeling. Pure and Applied Chemistry, 89:597–643, 2017. doi:https://doi.org/10.1515/pac-2016-1107.">LKSS17</a>]</span></p>
+<p>A summary of chemical solvers numerical methods and comparison between LMA, GEM and newer approach such as extended LMA (xLMA) are summarized nicely by Leal et al.<span id="id1">[<a class="reference internal" href="markdown.html#id18" title="Allan MM Leal, Dmitrii A Kulik, William R Smith, and Martin O Saar. An overview of computational methods for chemical equilibrium and kinetic calculations for geochemical and reactive transport modeling. Pure and Applied Chemistry, 89:597–643, 2017. doi:https://doi.org/10.1515/pac-2016-1107.">LKSS17</a>]</span></p>
 </section>
 <section id="limitations-of-geochemical-modeling-codes-not-a-black-box">
 <h2>Limitations of geochemical modeling codes - not a “black-box”<a class="headerlink" href="#limitations-of-geochemical-modeling-codes-not-a-black-box" title="Link to this heading">#</a></h2>
-<p>Most of the geochemical modeling codes have naturally some limitations, many of which are related to the underlying thermodynamic databases and the existing or implementation of equations of state for complex phases and their stability as a function of pressure and temperature. This quote by <span id="id2">[<a class="reference internal" href="#id22" title="Eric H Oelkers, Pascale Benezeth, and Gleb S Pokrovski. Thermodynamic databases for water-rock interaction. Reviews in Mineralogy and Geochemistry, 70(1):1–46, 2009.">OBP09</a>]</span> gives an idea of the importance of not using geochemical modeling as a “black-box”:</p>
+<p>Most of the geochemical modeling codes have naturally some limitations, many of which are related to the underlying thermodynamic databases and the existing or implementation of equations of state for complex phases and their stability as a function of pressure and temperature. This quote by <span id="id2">[<a class="reference internal" href="markdown.html#id17" title="Eric H Oelkers, Pascale Benezeth, and Gleb S Pokrovski. Thermodynamic databases for water-rock interaction. Reviews in Mineralogy and Geochemistry, 70(1):1–46, 2009.">OBP09</a>]</span> gives an idea of the importance of not using geochemical modeling as a “black-box”:</p>
 <blockquote>
 <div><p>All of these codes allow calculations/prediction of the equilibrium and/or evolution of geochemical systems as a function of reaction progress with the press of a few buttons. Such calculations appear to have an amazing accuracy; results of these computer codes are commonly reported to 4 or more significant digits.</p>
 <p>Therein lies the disadvantage of these computer codes as they give the appearance that the thermodynamic databases on which they are based are perfect and accurate beyond all imagination. For many species or minerals few data exist, and in many other cases, no experimental data exist at all. In such cases the thermodynamic ‘data’ were ‘created’ using correlations</p>
@@ -521,52 +521,58 @@ document.write(`
 <p>Here is a non-exhaustive list of some common thermodynamic databases used in geochemical modeling:</p>
 <p><strong>Minerals, gases, aqueous species:</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://geoinfo.nmt.edu/mines-tdb/">MINES thermodynamic database</a> <span id="id3">[<a class="reference internal" href="#id13" title="A.P. Gysi, N.C. Hurtig, R. Pan, G.D. Miron, and D.A. Kulik. Mines thermodynamic database. New Mexico Bureau of Geology and Mineral Resources, 2023. doi:https://doi.org/10.58799/mines-tdb.">GHP+23</a>]</span> NMBGMR/NMT (ore deposits, critical minerals, geothermal, CO2 sequestration, hydrothermal fluid-rock)</p></li>
-<li><p>SUPCRT92, slop98.dat, SUPCRTBL (Zimmer et al., 2016), Indiana U.</p></li>
-<li><p>Provided in PHREEQC (see review by Lu et al. <span id="id4">[<a class="reference internal" href="#id21" title="Peng Lu, Guanru Zhang, John Apps, and Chen Zhu. Comparison of thermodynamic data files for phreeqc. Earth-Science Reviews, 225:103888, 2022. doi:https://doi.org/10.1016/j.earscirev.2021.103888.">LZAZ22</a>]</span>), many of these are also part of <a class="reference external" href="https://www.gwb.com/thermo.php">GWB software</a>: phreeqc.dat, llnl.dat, wateq4f.dat, carbfix.data, minteq.data, supcrtbl.dat, pitzer.dat, etc.</p></li>
-<li><p>Application specific: <a class="reference external" href="https://www.psi.ch/en/les/database">PSI-NAGRA</a> and <a class="reference external" href="https://www.thereda.de/en">THEREDA</a> (radioactive wastes), <a class="reference external" href="https://cemgems.org/cemdata/about-cemdata/">Cemdata</a> (cement industry), <a class="reference external" href="https://thermoddem.brgm.fr/page/project-evolutions">THERMODDEM</a> (wastes, geothermal, acid mine, cement)
-<strong>Mineral specific databases</strong></p></li>
-<li><p>Holland and Powell (1998, 2011) <span id="id5">[<a class="reference internal" href="#id20" title="TJB Holland and R Powell. An improved and extended internally consistent thermodynamic dataset for phases of petrological interest, involving a new equation of state for solids. Journal of metamorphic Geology, 29(3):333–383, 2011.">HP11</a>, <a class="reference internal" href="#id19" title="TJB Holland and RTJB Powell. An internally consistent thermodynamic data set for phases of petrological interest. Journal of metamorphic Geology, 16(3):309–343, 1998.">HP98</a>]</span>, based on metamorphic phase equilibria, least-squares regression technique to optimize the thermodynamic parameters, minimizing inconsistencies between calculated and observed phase equilibria</p></li>
-<li><p>Gottschalk (1997) <span id="id6">[<a class="reference internal" href="#id17" title="Matthias Gottschalk. Internally consistent thermodynamic data for rock-forming minerals in the system SiO2-TiO2-Al2O3-CaO-MgO-FeO-K2O-Na2O-H2O-CO2. European Journal of Mineralogy, 9(1):175–223, 1997.">Got97</a>]</span>, calorimetry, phase equilibria, solubility data, empirical estimations</p></li>
-<li><p>Berman and Brown (1985) <span id="id7">[<a class="reference internal" href="#id18" title="Robert G Berman and Thomas H Brown. Heat capacity of minerals in the system Na 2 OK 2 O-CaO-MgO-FeO-Fe2O3-Al2O3-SiO2-TiO2-H2O-CO2: representation, estimation, and high temperature extrapolation. Contributions to Mineralogy and Petrology, 89:168–183, 1985.">BB85</a>]</span>, fitting and revised equation for heat capacity</p></li>
+<li><p><a class="reference external" href="https://geoinfo.nmt.edu/mines-tdb/">MINES thermodynamic database</a> <span id="id3">[<a class="reference internal" href="markdown.html#id7" title="A.P. Gysi, N.C. Hurtig, R. Pan, G.D. Miron, and D.A. Kulik. Mines thermodynamic database. New Mexico Bureau of Geology and Mineral Resources, 2023. doi:https://doi.org/10.58799/mines-tdb.">GHP+23</a>]</span> NMBGMR/NMT (ore deposits, critical minerals, geothermal, CO2 sequestration, hydrothermal fluid-rock)</p></li>
+<li><p>SUPCRT92, slop98.dat, SUPCRTBL (Zimmer et al., 2016) <span id="id4">[<a class="reference internal" href="markdown.html#id16" title="Kurt Zimmer, Yilun Zhang, Peng Lu, Yanyan Chen, Guanru Zhang, Mehmet Dalkilic, and Chen Zhu. Supcrtbl: a revised and extended thermodynamic dataset and software package of supcrt92. Computers &amp; geosciences, 90:97–111, 2016. doi:https://doi.org/10.1016/j.cageo.2016.02.013.">ZZL+16</a>]</span>, Indiana U.</p></li>
+<li><p>Provided in PHREEQC (see review by Lu et al. <span id="id5">[<a class="reference internal" href="markdown.html#id15" title="Peng Lu, Guanru Zhang, John Apps, and Chen Zhu. Comparison of thermodynamic data files for phreeqc. Earth-Science Reviews, 225:103888, 2022. doi:https://doi.org/10.1016/j.earscirev.2021.103888.">LZAZ22</a>]</span>), many of these are also part of <a class="reference external" href="https://www.gwb.com/thermo.php">GWB software</a>: phreeqc.dat, llnl.dat, wateq4f.dat, carbfix.data, minteq.data, supcrtbl.dat, pitzer.dat, etc.</p></li>
+<li><p>Application specific: <a class="reference external" href="https://www.psi.ch/en/les/database">PSI-NAGRA</a> and <a class="reference external" href="https://www.thereda.de/en">THEREDA</a> (radioactive wastes), <a class="reference external" href="https://cemgems.org/cemdata/about-cemdata/">Cemdata</a> (cement industry), <a class="reference external" href="https://thermoddem.brgm.fr/page/project-evolutions">THERMODDEM</a> (wastes, geothermal, acid mine, cement)</p></li>
+</ul>
+<p><strong>Mineral specific databases</strong></p>
+<ul class="simple">
+<li><p>Holland and Powell (1998, 2011) <span id="id6">[<a class="reference internal" href="markdown.html#id13" title="TJB Holland and R Powell. An internally consistent thermodynamic data set for phases of petrological interest. Journal of metamorphic Geology, 16(3):309–343, 1998.">HP98</a>, <a class="reference internal" href="markdown.html#id14" title="TJB Holland and R Powell. An improved and extended internally consistent thermodynamic dataset for phases of petrological interest, involving a new equation of state for solids. Journal of metamorphic Geology, 29(3):333–383, 2011.">HP11</a>]</span>, based on metamorphic phase equilibria, least-squares regression technique to optimize the thermodynamic parameters, minimizing inconsistencies between calculated and observed phase equilibria</p></li>
+<li><p>Gottschalk (1997) <span id="id7">[<a class="reference internal" href="markdown.html#id11" title="Matthias Gottschalk. Internally consistent thermodynamic data for rock-forming minerals in the system SiO2-TiO2-Al2O3-CaO-MgO-FeO-K2O-Na2O-H2O-CO2. European Journal of Mineralogy, 9(1):175–223, 1997.">Got97</a>]</span>, calorimetry, phase equilibria, solubility data, empirical estimations</p></li>
+<li><p>Berman and Brown (1985) <span id="id8">[<a class="reference internal" href="markdown.html#id12" title="Robert G Berman and Thomas H Brown. Heat capacity of minerals in the system Na2O-K2O-CaO-MgO-FeO-Fe2O3-Al2O3-SiO2-TiO2-H2O-CO2: representation, estimation, and high temperature extrapolation. Contributions to Mineralogy and Petrology, 89:168–183, 1985.">BB85</a>]</span>, fitting and revised equation for heat capacity</p></li>
 <li><p><a class="reference external" href="https://doi.org/10.3133/b2131">Robie and Hemingway (1995)</a>, USGS compilation and critical evaluation, based on calorimetric measurements</p></li>
 </ul>
 </section>
 <section id="citations">
 <h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
-<div class="docutils container" id="id8">
+<div class="docutils container" id="id9">
 <div role="list" class="citation-list">
-<div class="citation" id="id18" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">BB85</a><span class="fn-bracket">]</span></span>
-<p>Robert G Berman and Thomas H Brown. Heat capacity of minerals in the system Na 2 OK 2 O-CaO-MgO-FeO-Fe2O3-Al2O3-SiO2-TiO2-H2O-CO2: representation, estimation, and high temperature extrapolation. <em>Contributions to Mineralogy and Petrology</em>, 89:168–183, 1985.</p>
+<div class="citation" id="id19" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">BB85</a><span class="fn-bracket">]</span></span>
+<p>Robert G Berman and Thomas H Brown. Heat capacity of minerals in the system Na2O-K2O-CaO-MgO-FeO-Fe2O3-Al2O3-SiO2-TiO2-H2O-CO2: representation, estimation, and high temperature extrapolation. <em>Contributions to Mineralogy and Petrology</em>, 89:168–183, 1985.</p>
 </div>
-<div class="citation" id="id17" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">Got97</a><span class="fn-bracket">]</span></span>
+<div class="citation" id="id18" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">Got97</a><span class="fn-bracket">]</span></span>
 <p>Matthias Gottschalk. Internally consistent thermodynamic data for rock-forming minerals in the system SiO2-TiO2-Al2O3-CaO-MgO-FeO-K2O-Na2O-H2O-CO2. <em>European Journal of Mineralogy</em>, 9(1):175–223, 1997.</p>
 </div>
-<div class="citation" id="id13" role="doc-biblioentry">
+<div class="citation" id="id14" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">GHP+23</a><span class="fn-bracket">]</span></span>
 <p>A.P. Gysi, N.C. Hurtig, R. Pan, G.D. Miron, and D.A. Kulik. Mines thermodynamic database. <em>New Mexico Bureau of Geology and Mineral Resources</em>, 2023. <a class="reference external" href="https://doi.org/https://doi.org/10.58799/mines-tdb">doi:https://doi.org/10.58799/mines-tdb</a>.</p>
 </div>
 <div class="citation" id="id20" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">HP11</a><span class="fn-bracket">]</span></span>
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">HP98</a><span class="fn-bracket">]</span></span>
+<p>TJB Holland and R Powell. An internally consistent thermodynamic data set for phases of petrological interest. <em>Journal of metamorphic Geology</em>, 16(3):309–343, 1998.</p>
+</div>
+<div class="citation" id="id21" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">HP11</a><span class="fn-bracket">]</span></span>
 <p>TJB Holland and R Powell. An improved and extended internally consistent thermodynamic dataset for phases of petrological interest, involving a new equation of state for solids. <em>Journal of metamorphic Geology</em>, 29(3):333–383, 2011.</p>
 </div>
-<div class="citation" id="id19" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">HP98</a><span class="fn-bracket">]</span></span>
-<p>TJB Holland and RTJB Powell. An internally consistent thermodynamic data set for phases of petrological interest. <em>Journal of metamorphic Geology</em>, 16(3):309–343, 1998.</p>
-</div>
-<div class="citation" id="id23" role="doc-biblioentry">
+<div class="citation" id="id25" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">LKSS17</a><span class="fn-bracket">]</span></span>
 <p>Allan MM Leal, Dmitrii A Kulik, William R Smith, and Martin O Saar. An overview of computational methods for chemical equilibrium and kinetic calculations for geochemical and reactive transport modeling. <em>Pure and Applied Chemistry</em>, 89:597–643, 2017. <a class="reference external" href="https://doi.org/https://doi.org/10.1515/pac-2016-1107">doi:https://doi.org/10.1515/pac-2016-1107</a>.</p>
 </div>
-<div class="citation" id="id21" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">LZAZ22</a><span class="fn-bracket">]</span></span>
+<div class="citation" id="id22" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">LZAZ22</a><span class="fn-bracket">]</span></span>
 <p>Peng Lu, Guanru Zhang, John Apps, and Chen Zhu. Comparison of thermodynamic data files for phreeqc. <em>Earth-Science Reviews</em>, 225:103888, 2022. <a class="reference external" href="https://doi.org/https://doi.org/10.1016/j.earscirev.2021.103888">doi:https://doi.org/10.1016/j.earscirev.2021.103888</a>.</p>
 </div>
-<div class="citation" id="id22" role="doc-biblioentry">
+<div class="citation" id="id24" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">OBP09</a><span class="fn-bracket">]</span></span>
 <p>Eric H Oelkers, Pascale Benezeth, and Gleb S Pokrovski. Thermodynamic databases for water-rock interaction. <em>Reviews in Mineralogy and Geochemistry</em>, 70(1):1–46, 2009.</p>
+</div>
+<div class="citation" id="id23" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">ZZL+16</a><span class="fn-bracket">]</span></span>
+<p>Kurt Zimmer, Yilun Zhang, Peng Lu, Yanyan Chen, Guanru Zhang, Mehmet Dalkilic, and Chen Zhu. Supcrtbl: a revised and extended thermodynamic dataset and software package of supcrt92. <em>Computers &amp; geosciences</em>, 90:97–111, 2016. <a class="reference external" href="https://doi.org/https://doi.org/10.1016/j.cageo.2016.02.013">doi:https://doi.org/10.1016/j.cageo.2016.02.013</a>.</p>
 </div>
 </div>
 </div>

@@ -90,9 +90,10 @@ Here is a non-exhaustive list of some common thermodynamic databases used in geo
 
 **Minerals, gases, aqueous species:**
 - [MINES thermodynamic database](https://geoinfo.nmt.edu/mines-tdb/) {cite}`gysi_2023` NMBGMR/NMT (ore deposits, critical minerals, geothermal, CO2 sequestration, hydrothermal fluid-rock)
-- SUPCRT92, slop98.dat, SUPCRTBL (Zimmer et al., 2016), Indiana U.
+- SUPCRT92, slop98.dat, SUPCRTBL (Zimmer et al., 2016) {cite}`zimmer2016`, Indiana U.
 - Provided in PHREEQC (see review by Lu et al. {cite}`Lu2022`), many of these are also part of [GWB software](https://www.gwb.com/thermo.php): phreeqc.dat, llnl.dat, wateq4f.dat, carbfix.data, minteq.data, supcrtbl.dat, pitzer.dat, etc.
 - Application specific: [PSI-NAGRA](https://www.psi.ch/en/les/database) and [THEREDA](https://www.thereda.de/en) (radioactive wastes), [Cemdata](https://cemgems.org/cemdata/about-cemdata/) (cement industry), [THERMODDEM](https://thermoddem.brgm.fr/page/project-evolutions) (wastes, geothermal, acid mine, cement)
+
 **Mineral specific databases**
 - Holland and Powell (1998, 2011) {cite}`holland1998,holland2011`, based on metamorphic phase equilibria, least-squares regression technique to optimize the thermodynamic parameters, minimizing inconsistencies between calculated and observed phase equilibria
 - Gottschalk (1997) {cite}`gottschalk1997`, calorimetry, phase equilibria, solubility data, empirical estimations
