@@ -25,11 +25,14 @@ Here is a list of popular modeling programs, including "Law of mass action (LMA)
 - [PHREEQC](https://www.usgs.gov/software/phreeqc-version-3), USGS, D. Parkhurst & Appelo (1999) 
 - [Geochemist's Workbench](https://www.gwb.com/index.php), Aqueous Solutions LLC, 
 - SOLVEQ, M. Reed, N. Spycher, J. Palandri, U. Oregon; EQ3/6 (Wolery, 1983), MINTEQA2, CHESS (van der Lee et al., 2002), [Reaktoro](https://reaktoro.org/), ETHZ, (Leal), WATEQ4
+
 **Geochemical equilibrium solver -- GEM based**
 - [GEMS code package](http://gems.web.psi.ch/), Paul Scherrer Institute, D. Kulik, D. Miron
-- [HCh](http://www1.geol.msu.ru/deps/geochems/soft/index_e.html), MSU, Y. Shvarov,  
+- [HCh](http://www1.geol.msu.ru/deps/geochems/soft/index_e.html), MSU, Y. Shvarov,
+
 **Reactive mass transport codes**
 - [TOUGHREACT](https://tough.lbl.gov/software/toughreact/), LBL, E. Sonnenthal, N. Spycher, T. Xu 
+
 **Other Tools:**
 - [CHNOSZ](https://chnosz.net/) (R package for activity diagrams, thermo calc) 
 - [ThermoFun](https://chnosz.net/) (open-source code to calc thermodynamic properties, equilibrium constants, plotting of diagrams)
