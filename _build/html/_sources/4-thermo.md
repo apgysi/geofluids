@@ -1,10 +1,12 @@
-# 4- Learn: Thermodynamics crash course
-[[3-aqueous-speciation]][[4-mineral-solubility]][[5-reaction-kinetics]]
+# 4- Learn: Thermodynamic Framework
+
+
+
 
 ## Gibbs energy, enthalpy, entropy, volume
 
 ## Equilibrium constants - relation between mineral solubilities and aqueous speciation
-## Aqueous speciation
+## Aqueous speciation & species activities
 
 ## Redox Reaction
 ## Reaction kinetics
