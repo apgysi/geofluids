@@ -4,6 +4,7 @@
 title: "Geofluids: Your 5-Step Guide to Mastering Geochemical Reaction Path Modeling"
 author: Alexander P. Gysi
 logo: logo.png
+copyright                   : "2024"  # Copyright year to be placed in the footer
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
